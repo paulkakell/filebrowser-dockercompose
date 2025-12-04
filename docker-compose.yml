@@ -23,6 +23,11 @@ services:
       - homepage.icon=${HOMEPAGEICON}
       - homepage.href=${HOMEPAGEHREF}
       - homepage.description=${HOMEPAGEDESCRIPTION}
+      - homepage.widget.type=filebrowser
+      - homepage.widget.url=${HOMEPAGEWIDGETURL}
+      - homepage.widget.username=${HOMEPAGEWIDGETUSERNAME}
+      - homepage.widget.password=${HOMEPAGEWIDGETPASSWORD}
+      - homepage.docker=true
     volumes:
       - ${VOLUMEROOT}:/srv:rw
       - ${VOLUMEROOT}/filebrowser/database:/database:rw
